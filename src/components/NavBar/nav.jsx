@@ -21,10 +21,10 @@ export default function Nav({ setSearchText, bookmark }) {
 
   return (
     <div>
-      <div className="flex justify-between m-7 items-center">
+      <div className=" flex-row lg:flex justify-between m-7 items-center">
         <div className="flex items-center gap-3">
-          <img className="h-12" src="picture.png" alt="" />
-          <h1 className="font-semibold text-3xl">
+          <img className="h-10 lg:h-12" src="picture.png" alt="" />
+          <h1 className="font-semibold text-2xl lg:text-3xl">
             <span className="text-green-300">Image</span>
             <span className="text-blue-300">Gallery</span>
           </h1>
@@ -36,17 +36,17 @@ export default function Nav({ setSearchText, bookmark }) {
           >
             <CiSearch />
           </button>
-          <div className="flex items-center gap-8 relative">
+          <div className="flex items-center gap-4 lg:gap-8 relative">
             <input
               onChange={(e) => setText(e.target.value)}
               value={text}
-              className="h-10 w-[390px] border border-x-gray-100 px-3 rounded-md"
+              className=" h-10 lg:h-10 lg:w-[390px] border border-x-gray-100 px-3 rounded-md"
               type="text"
               placeholder="Search your Image"
             />
-            <div className="hover:bg-gray-100 px-2 text-center rounded-xl relative">
-              <button onClick={handleShowBookmark}>
-                <img className="h-12" src="favorite-image.png" alt="" />
+            <div className=" px-2 text-center rounded-xl relative">
+              <button className="hover:bg-gray-100" onClick={handleShowBookmark}>
+                <img className="  h-12 lg:mx-2 mt-4 lg:mt-2" src="favorite-image.png" alt="" />
               </button>
               {showBookMark && (
                 <div className="absolute top-12 right-0 bg-white shadow-md rounded-lg w-[300px] max-h-[400px] overflow-y-auto z-10">
