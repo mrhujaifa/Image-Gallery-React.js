@@ -99,7 +99,7 @@ export default function ImageGallery({ image, handleBookmark, handleDelete }) {
             checkFavorite();
           }}
           className={`bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 ${
-            isFavorite ? "bg-red-500 text-white" : ""
+            isFavorite ? " bg-red-500 text-red-600" : ""
           }`}
           title="Favorite"
         >
