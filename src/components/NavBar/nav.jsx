@@ -40,7 +40,7 @@ export default function Nav({ setSearchText, bookmark }) {
             <input
               onChange={(e) => setText(e.target.value)}
               value={text}
-              className=" h-10 lg:h-10 lg:w-[390px] border border-x-gray-100 px-3 rounded-md"
+              className=" h-10 w-[280px] lg:h-10 lg:w-[390px] border border-x-gray-100 px-3 rounded-md"
               type="text"
               placeholder="Search your Image"
             />
